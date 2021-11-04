@@ -1,0 +1,376 @@
+body {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists
+   will truncate terms that are too long to fit in the left column
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input  elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 600px;
+}
+
+.text-danger {
+    color: #ff0000;
+}
+
+.field-validation-error {
+    color: #ff0000;
+}
+
+.input-validation-error {
+    border: 2px solid #ff0000;
+}
+
+/* TEXT DECORATORS */
+.ghost-text {
+    opacity: 0.7;
+}
+
+/*REMOVES BULLET FROM VALIDATION SUMMARY*/
+.validation-summary-errors ul {
+    margin-left: 40px
+}
+
+a.blocklink {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.glow-commands > div.thumbnail:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: .25s;
+}
+
+.glow-commands a.blocklink:hover {
+    text-decoration: none;
+}
+
+.glow-commands a.blocklink:hover {
+    font-weight: 600 !important;
+    transition: .25s;
+}
+
+.navbar-fixed-bottom {
+    height: 3em;
+}
+
+@media screen and (max-width: 1600px) {
+    .navbar a, .navbar-nav > li > a {
+        padding: 10px 10px;
+        font-stretch: semi-condensed;
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    .navbar a, .navbar-nav > li > a {
+        padding: 9px 9px;
+        font-size: .9em;
+        font-stretch: condensed;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .navbar a, .navbar-nav > li > a {
+        font-size: .8em;
+        font-stretch: condensed;
+    }
+
+    .patient-bar {
+        font-size: .9em;
+    }
+
+    #navbarCollapse .nav-full {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar a, .navbar-nav > li > a {
+        padding: 8px 8px;
+        font-size: .7em;
+        font-stretch: extra-condensed;
+    }
+}
+
+.patient-bar {
+    margin: 0;
+    padding: 0.5em 0.5em 0.5em 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-wrap: none;
+    background-color: #F5F5F5;
+    border: 2px solid #48AFEA;
+    width: 100%;
+    /*shadow*/
+    -moz-box-shadow: inset 0 0 2px #000000;
+    -webkit-box-shadow: inset 0 0 2px #000000;
+    box-shadow: inset 0 0px 1.5px #000000;
+}
+
+.patient-bar .info-field {
+    font-size: 0.8em;
+    padding: .4em .5em;
+}
+
+.patient-bar span.info-field:first-child {
+    padding: .4em .5em .4em 0;
+}
+
+.created-modified {
+    font-size: .7em;
+    font-style: italic;
+    color: #444444;
+    text-align: right;
+    padding: .25em;
+}
+
+#SearchResult {
+    margin-bottom: 2em;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes  wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+        opacity: 0;
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+        opacity: 1;
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+.emphasize {
+    animation: wiggle 1s forwards linear;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    background-color: #000000AA;
+}
+
+.loading-overlay-error {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    background-color: #ce1313AA;
+    display: none;
+}
+
+#medical-history {
+    padding: 1px;
+}
+
+ul.patient-id-list {
+    padding-left: 0px;
+}
+
+ul.patient-id-list > li {
+    list-style: none;
+}
+
+.no-wrap, .patientid {
+    text-wrap: none;
+    white-space: nowrap;
+}
+
+.no-wrap > .btn-group {
+    display: flex;
+}
+
+.search-panel {
+    display: flex;
+}
+
+.search-panel > input {
+    flex-basis: 80%;
+    margin-right: 1em;
+}
+
+.search-panel > button {
+    align-self: flex-end;
+}
+
+/* FOR FUTURE USE... (content character is star)
+.required {
+
+}
+    .required::after {
+        margin-left: .5em;
+        color: #ff0000;
+        font-family: 'Glyphicons Halflings';
+        content: '\e006'
+    }
+*/
+
+/* Fix for data table top (search) and bottom (pagination) row touching panel edges*/
+.panel .dataTables_wrapper > .row:nth-child(1), .panel .dataTables_wrapper > .row:nth-last-child(1) {
+    margin: .5em .25em;
+}
+
+/* pure CSS way to display show/hide on bootstrap collapse button */
+.toggler:before {
+    content: "Hide"
+}
+
+.toggler.collapsed:before {
+    content: "Show"
+}
+
+.toggler:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings'; /* essential for enabling glyphicon */
+    content: "\e113";
+    float: right;
+    color: grey;
+}
+
+.toggler.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e114";
+}
+
+.toggler {
+    /* account for glyph */
+    padding-right: 2em;
+}
+
+/****************** Beta ribbons ***********************/
+.ribbon-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ribbon {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    z-index: 1;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    text-align: right;
+}
+
+    .ribbon span {
+        font-size: 10px;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 20px;
+        transform: rotate(-45deg);
+        width: 100px;
+        display: block;
+        background-color: lightgreen;
+        box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 19px;
+        left: -21px;
+    }
+
+        .ribbon span::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid #087F8F;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #087F8F;
+        }
+
+        .ribbon span::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid #087F8F;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #087F8F;
+        }
+
+thead>tr>th {
+    white-space: nowrap;
+}
+
+tr.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+    tr.disabled input.disable-checkbox {
+        opacity: 1;
+        cursor: pointer;
+    }
